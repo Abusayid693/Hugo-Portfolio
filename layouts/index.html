@@ -10,60 +10,13 @@
             </div>
             <div class="header__text-box">
               <h1 class="heading-primary">
-                <span class="heading-primary--main">OUTDOORS</span>
-                <span class="heading-primary--sub">IS WHERE LIFE HAPPENS</span>
+                <span class="heading-primary--main">{{.Site.Data.head.Heading}} </span>
+                <span class="heading-primary--sub">{{ index .Site.Data.head "Heading Secondary" | markdownify }}</span>
               </h1>
               <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
           </header>
-            <section class="section-about">
-              <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                  {{ .Title }}
-                </h2>
-              </div>
-      
-              <div class="row">
-                <div class="col-1-of-2">
-                  <h3 class="heading-turcery u-margin-bottom-small">
-                    You are going to fall in love with nature
-                  </h3>
-                  <p class="paragraph">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
-                    ea ipsam quidem sapiente, ducimus impedit inventore veniam maiores
-                    mollitia quos nostrum totam eum libero, eius corporis doloremque
-                    nam eaque ipsa?
-                  </p>
-      
-                  <h3 class="heading-turcery u-margin-bottom-small">
-                    You are going to fall in love with nature
-                  </h3>
-                  <p class="paragraph">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
-                    ea ipsam quidem sapiente, ducimus
-                  </p>
-      
-                  <a href="#" class="btn-text">Learn more &rarr;</a>
-                </div>
-                <div class="col-1-of-2">
-                  <div class="composition">
-                    <img
-                      src="images/nat-1-large.jpg"
-                      alt=""
-                      class="composition__photo composition__photo--p1"
-                    /><img
-                      src="images/nat-2-large.jpg"
-                      alt=""
-                      class="composition__photo composition__photo--p2"
-                    /><img
-                      src="images/nat-3-large.jpg"
-                      alt=""
-                      class="composition__photo composition__photo--p3"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
+          {{ partial "about.html" . }}
           </main>
           <!-- {{ partial "grid.html" . }} -->
   </body>
