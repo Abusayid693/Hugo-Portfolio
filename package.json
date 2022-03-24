@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass":"node-sass sass/main.scss static/css/styles.css -w"
+    "compile:sass":"node-sass sass/main.scss static/css/styles.css -w",
+    "minify":"sh ./minify.sh",
+    "push:minify":"npm run minify && git push origin main"
   },
   "author": "",
   "license": "ISC",
