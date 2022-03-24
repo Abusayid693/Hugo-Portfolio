@@ -19,7 +19,14 @@
               <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
           </header>
-          {{ partial "experience.html" . }}
+
+          <!-- {{ range .Site.Data.experience.AAPL }}
+          <ul>
+           {{ .key }}
+          </ul>
+           {{ end }} -->
+           <!--  "data" .Site.Data.experience.AAPL is passed as props from yaml file -->
+          {{ partial "experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
           {{ partial "about.html" . }}
           {{ partial "features.html" . }}
           {{ partial "cards.html" . }}

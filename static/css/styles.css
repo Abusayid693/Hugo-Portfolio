@@ -133,7 +133,7 @@ body {
   margin-top: -10rem; }
 
 .section-experience {
-  padding: 25rem 0;
+  padding: 25rem 0 0 0;
   background-color: #f7f7f7;
   margin-top: -18rem; }
 
@@ -250,16 +250,21 @@ body {
 
 .experience-box {
   margin: 0 auto;
-  width: max-content; }
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 50vw; }
   .experience-box__slider {
     position: relative; }
     .experience-box__slider ul::after {
       position: absolute;
-      top: calc(var(--sidebar-position)*(100%/3));
+      top: calc(var(--sidebar-position)*(100%/var(--number-of-items)));
       content: "";
       width: 2px;
-      height: calc(100%/3);
-      background-color: #ff4a81; }
+      height: calc(100%/var(--number-of-items));
+      background-color: #ff4a81;
+      transition: 300ms; }
     .experience-box__slider ul::before {
       position: absolute;
       top: 0;
@@ -291,6 +296,9 @@ body {
       left: 0;
       font-size: 1.7rem;
       transition: 200ms; }
+
+.experience-card:not(.experience-card-0) {
+  display: none; }
 
 .header {
   height: 95vh;

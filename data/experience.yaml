@@ -1,0 +1,25 @@
+AAPL:
+  - company: 'Listnr'
+    key: 0
+    role: 'SDE Intern'
+    timeframe: 'November 2021 - Present'
+    data:
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+  - company: 'Wknd'
+    key: 1
+    role: 'SDE Intern'
+    timeframe: 'November 2021 - Present'
+    data:
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+  - company: 'MLH'
+    key: 2
+    role: 'SDE Intern'
+    timeframe: 'November 2021 - Present'
+    data:
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'

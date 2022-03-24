@@ -2,10 +2,9 @@
   <div class="u-left-text u-margin-bottom-big">
     <h2 class="heading-secondary">experience</h2>
   </div>
-
   <div class="experience-box">
     <div class="experience-box__slider">
-      <ul style="--sidebar-position: 1">
+      <ul style="--sidebar-position: 0; --number-of-items: 3">
         <li>
           <input type="radio" name="company" id="c1" value="0" />
           <label for="c1">Wknd</label>
@@ -20,17 +19,32 @@
         </li>
       </ul>
     </div>
-    <div class="experience-box__content"></div>
+    <div class="experience-box__content">
+        {{ range .data }}
+        {{ partial "single.html" (dict "context" . "myVar" .key  "company" .company "data" .data) }} 
+        {{ end }}
+    </div>
   </div>
 </section>
 
 <script>
-  const slider = document.querySelectorAll("input[name='company']");
+  const options = document.querySelectorAll("input[name='company']");
+  const slider = document.querySelector(".experience-box__slider > ul");
+  const cards = document.querySelectorAll(".experience-card");
 
-  slider.forEach((item) => {
+  options.forEach((item) => {
+
     item.addEventListener("click", () => {
-      console.log(item.value);
+
+      cards.forEach((card) => {
+        card.style.display = "none";
+      });
+
+      slider.style.setProperty("--sidebar-position", item.value);
+
+      const selectedCard = document.querySelector(`.experience-card-${item.value}`);
+      selectedCard.style.display = "block";
+
     });
   });
-  
 </script>

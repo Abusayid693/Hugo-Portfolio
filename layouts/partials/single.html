@@ -1,0 +1,7 @@
+<div class="experience-card-{{ .myVar }} experience-card">
+  {{ .myVar }} 
+  {{.company}}
+  {{ range .data }}
+  <h3>{{ . }}</h3>
+  {{ end }}
+</div>
