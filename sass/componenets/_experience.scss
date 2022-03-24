@@ -1,0 +1,56 @@
+.experience-box {
+    margin: 0 auto;
+    width: max-content;
+  &__slider {
+    position: relative;
+    ul {
+        &::after{
+            position:absolute;
+            top: calc(var(--sidebar-position)*(100%/3));
+            content: "";
+            width: 2px;
+            height: calc(100%/3);
+            background-color: $color-pink-2;
+        }
+        &::before{
+            position:absolute;
+            top: 0;
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: $color-grey-light-2;
+        }
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    input {
+      width: 20rem;
+      height: 5rem;
+      z-index: 10;
+      opacity: 0;
+
+      &:checked + label {
+        background-color: $color-grey-light-2;
+      }
+
+      &:hover + label{
+        background-color: $color-grey-light-2;
+    }
+    }
+    label {
+      padding-left: 10px;
+      width: 20rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 5rem;
+      position: absolute;
+      left: 0;
+      font-size: 1.7rem;
+      transition: 200ms;
+    }
+  }
+}

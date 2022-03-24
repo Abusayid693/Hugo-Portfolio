@@ -109,6 +109,9 @@ body {
   color: #568cff;
   font-style: normal; }
 
+.u-left-text {
+  margin-left: 20%; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem;
@@ -128,6 +131,11 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 50rem 0;
   margin-top: -10rem; }
+
+.section-experience {
+  padding: 25rem 0;
+  background-color: #f7f7f7;
+  margin-top: -18rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -239,6 +247,50 @@ body {
   transition: all .8s; }
   .card:hover {
     transform: rotateY(180deg); }
+
+.experience-box {
+  margin: 0 auto;
+  width: max-content; }
+  .experience-box__slider {
+    position: relative; }
+    .experience-box__slider ul::after {
+      position: absolute;
+      top: calc(var(--sidebar-position)*(100%/3));
+      content: "";
+      width: 2px;
+      height: calc(100%/3);
+      background-color: #ff4a81; }
+    .experience-box__slider ul::before {
+      position: absolute;
+      top: 0;
+      content: "";
+      width: 2px;
+      height: 100%;
+      background-color: #ebebeb; }
+    .experience-box__slider ul li {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .experience-box__slider input {
+      width: 20rem;
+      height: 5rem;
+      z-index: 10;
+      opacity: 0; }
+      .experience-box__slider input:checked + label {
+        background-color: #ebebeb; }
+      .experience-box__slider input:hover + label {
+        background-color: #ebebeb; }
+    .experience-box__slider label {
+      padding-left: 10px;
+      width: 20rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 5rem;
+      position: absolute;
+      left: 0;
+      font-size: 1.7rem;
+      transition: 200ms; }
 
 .header {
   height: 95vh;

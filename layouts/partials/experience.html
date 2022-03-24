@@ -1,0 +1,36 @@
+<section class="section-experience">
+  <div class="u-left-text u-margin-bottom-big">
+    <h2 class="heading-secondary">experience</h2>
+  </div>
+
+  <div class="experience-box">
+    <div class="experience-box__slider">
+      <ul style="--sidebar-position: 1">
+        <li>
+          <input type="radio" name="company" id="c1" value="0" />
+          <label for="c1">Wknd</label>
+        </li>
+        <li>
+          <input type="radio" name="company" id="c1" value="1" />
+          <label for="c1">Wknd</label>
+        </li>
+        <li>
+          <input type="radio" name="company" id="c1" value="2" />
+          <label for="c1">Wknd</label>
+        </li>
+      </ul>
+    </div>
+    <div class="experience-box__content"></div>
+  </div>
+</section>
+
+<script>
+  const slider = document.querySelectorAll("input[name='company']");
+
+  slider.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log(item.value);
+    });
+  });
+  
+</script>
