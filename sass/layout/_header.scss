@@ -2,15 +2,19 @@
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
+        rgba(rgb(0, 0, 0), 0.99),
+        rgba(rgb(59, 59, 59), 0.99)
       ),
       url("/images/hero.jpg"); 
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
-  
+    
+   &--profile{
+    height: 15rem;
+    border-radius: 50%;
+   }
     &__logo-box { 
       position: absolute;
       top: 4rem;

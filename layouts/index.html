@@ -8,17 +8,20 @@
             <div class="header__logo-box">
               <img src="images/logo-white.png" alt="" class="header__logo" />
             </div>
+
             <div class="header__text-box">
+                <img src="images/me.jpg" alt="" class="header--profile" />
               <h1 class="heading-primary">
-                <span class="heading-primary--main">{{.Site.Data.head.Heading}} </span>
                 <span class="heading-primary--sub">{{ index .Site.Data.head "Heading Secondary" | markdownify }}</span>
+                <span class="heading-primary--main">{{.Site.Data.head.Heading}} </span>
+                <span class="heading-primary--para">I'm building an analytics SaaS called Affilimate and a newsletter and community called Blogging for Devs. Find out more <i class="u-inline-link">on the blog →</i></span>
               </h1>
               <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
           </header>
           {{ partial "about.html" . }}
           {{ partial "features.html" . }}
+          {{ partial "cards.html" . }}
           </main>
-          <!-- {{ partial "grid.html" . }} -->
   </body>
 </html>
