@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "node-sass sass/main.scss static/css/styles.css -w",
     "minify": "sh ./minify.sh",
-    "push:minify": "sh ./prepush.sh"
+    "push:minify": "sh ./prepush.sh",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
