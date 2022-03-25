@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass":"node-sass sass/main.scss static/css/styles.css -w",
-    "minify":"sh ./minify.sh",
-    "push:minify":"sh ./prepush.sh"
+    "compile:sass": "node-sass sass/main.scss static/css/styles.css -w",
+    "minify": "sh ./minify.sh",
+    "push:minify": "sh ./prepush.sh"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "husky": "^7.0.4"
   }
 }
