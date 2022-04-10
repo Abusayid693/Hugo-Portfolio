@@ -29,7 +29,7 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 800ms ease-in-out;
   }
-  &--para{
+  &--para {
     font-weight: 300;
     font-size: 2rem;
     line-height: 1px !important;
@@ -46,22 +46,44 @@ body {
   color: $color-pink-2;
   letter-spacing: 2px;
   transition: all 200ms;
-  &:hover{
+  &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
-
-.heading-turcery{
-font-size: $default-font-size;
-font-weight: 700;
-text-transform: uppercase;
+.heading-turcery {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.paragraph{
+.paragraph {
   font-size: $default-font-size;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.list-text {
+  font-size: 1.7rem;
+  color: $color-text-dark;
+  line-height: 1.6;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.title-text{
+  color: $color-pink-2;
+  font-size: 2.7rem;
+  font-weight: 400;
+
+}
+
+.sub-title-text{
+  color: $color-text-dark;
+  font-weight: 400;
+  font-size: 1.45rem;
 }

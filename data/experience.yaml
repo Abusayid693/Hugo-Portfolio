@@ -1,25 +1,25 @@
 AAPL:
-  - company: 'Listnr'
+  - company: 'Wknd'
     key: 0
     role: 'SDE Intern'
     timeframe: 'November 2021 - Present'
     data:
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-  - company: 'Wknd'
+      - 'Spearheading the development of front‑end components followed by integrating GraphQL API to complete dashboards.'
+      - 'Optimised network requests and bundle size by 50% by using intersection observer which resulted increase in SEO score by 21% (for smaller screens).'
+      - 'Responsible for developing UI for WKND party app while enhancing existing component wise state management in react-native.'
+  - company: 'Listnr'
     key: 1
     role: 'SDE Intern'
     timeframe: 'November 2021 - Present'
     data:
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Developed new features for the Analytic dashboard components and integrated SAAS based product distribution platforms (Spotify, Google podcasts etc).'
+      - 'Refactored embed player into separate modules with 20% code reduction among shared components by removing duplicate code.'
+      - 'Built Native form elements which includes Multi-dropdown, Schedule picker, radio inputs.'
+      - 'Actively contributed in daily stand-ups, retrospectives, and sprint planning.'
   - company: 'MLH'
     key: 2
     role: 'SDE Intern'
     timeframe: 'November 2021 - Present'
     data:
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
-      - 'Engineered a REST API backend system with MongoDB as Database, Firebase for Authentication and User management.'
+      - 'Contributed to Group projects written in variety of technologies such as JavaScript with a focus on the React ecosystem, Jekyll, Python, delivered a Show and Tell lecture on Machine learning and its use cases.'
+      - 'Accelerated team’s purpose for achieving a key result and collaborating with a group of engaging 14 Pod.'

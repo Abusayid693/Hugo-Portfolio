@@ -1,22 +1,16 @@
 <section class="section-experience">
-  <div class="u-left-text u-margin-bottom-big">
+  <div class="u-left-text u-margin-bottom-medium">
     <h2 class="heading-secondary">experience</h2>
   </div>
   <div class="experience-box">
     <div class="experience-box__slider">
       <ul style="--sidebar-position: 0; --number-of-items: 3">
+        {{ range .data }}
         <li>
-          <input type="radio" name="company" id="c1" value="0" />
-          <label for="c1">Wknd</label>
+          <input type="radio" name="company" value={{.key}} />
+          <label for="c1">{{.company}}</label>
         </li>
-        <li>
-          <input type="radio" name="company" id="c2" value="1" />
-          <label for="c2">Wknd</label>
-        </li>
-        <li>
-          <input type="radio" name="company" id="c3" value="2" />
-          <label for="c3">Wknd</label>
-        </li>
+        {{ end }}
       </ul>
     </div>
     <div class="experience-box__content">

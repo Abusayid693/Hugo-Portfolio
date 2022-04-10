@@ -5,18 +5,22 @@
     flex-direction: row;
     align-items: flex-start;
     width: 50vw;
+    gap: 10%;
+
   &__slider {
     position: relative;
+
     ul {
         &::after{
             position:absolute;
             top: calc(var(--sidebar-position)*(100%/var(--number-of-items)));
             content: "";
-            width: 2px;
+            width: 3px;
             height: calc(100%/var(--number-of-items));
             background-color: $color-pink-2;
             transition: 300ms;
         }
+
         &::before{
             position:absolute;
             top: 0;
@@ -25,12 +29,15 @@
             height: 100%;
             background-color: $color-grey-light-2;
         }
+
       li {
         display: flex;
         flex-direction: row;
         align-items: center;
+        color : $color-text-dark;
       }
     }
+
     input {
       width: 20rem;
       height: 5rem;
@@ -45,8 +52,9 @@
         background-color: $color-grey-light-2;
     }
     }
+
     label {
-      padding-left: 10px;
+      padding-left: 2rem;
       width: 20rem;
       display: flex;
       flex-direction: row;
@@ -63,5 +71,17 @@
 .experience-card{
     &:not(&-0){
         display: none;
+    }
+
+    &-list{
+      margin-left: 3rem;
+      padding-top: 2rem;
+    }
+
+    .title-text{
+      span{
+        // color: #ffa7c4;
+        font-weight: 300;
+      }
     }
 }
