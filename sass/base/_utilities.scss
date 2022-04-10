@@ -22,3 +22,15 @@ font-style: normal;
 .u-left-text{
   margin-left: 24%;
 }
+
+.u-left-margin{
+  margin-left: 24%;
+}
+
+.u-link{
+  color: rgb(86, 140, 255);
+
+  &::after{
+    content: "";
+  }
+}

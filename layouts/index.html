@@ -29,8 +29,10 @@
            {{ end }} -->
            <!--  "data" .Site.Data.experience.AAPL is passed as props from yaml file -->
           {{ partial "experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
-          {{ partial "about.html" . }}
-          {{ partial "features.html" . }}
+          {{ partial "projects.html" . }}
+
+          <!-- {{ partial "about.html" . }} -->
+          <!-- {{ partial "features.html" . }} -->
           {{ partial "cards.html" . }}
           </main>
   </body>

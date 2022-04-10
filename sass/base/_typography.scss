@@ -24,9 +24,9 @@ body {
   }
   &--sub {
     display: block;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2rem;
-    letter-spacing: 1.75rem;
+    // letter-spacing: 1.75rem;
     animation: moveInRight 800ms ease-in-out;
   }
   &--para {
