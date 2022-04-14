@@ -1,0 +1,15 @@
+PROJECTS:
+  - title: 'Wknd'
+    key: 0
+    github: 'SDE Intern'
+    title: 'Unified Affiliate Dashboard and Content Analytics Affilimate aggregates affiliate commissions from different networks into a single, unified and user-friendly dashboard.'
+    sub_title: 'Unified Affiliate Dashboard and Content Analytics Affilimate aggregates affiliate commissions from different networks into a single, unified and user-friendly dashboard.'
+    image: 'https://monicalent.com/images/affilimate.jpg'
+    build_using: 'React js, Typescript'
+  - title: 'Wknd'
+    key: 0
+    github: 'SDE Intern'
+    title: 'Unified Affiliate Dashboard and Content Analytics Affilimate aggregates affiliate commissions from different networks into a single, unified and user-friendly dashboard.'
+    sub_title: 'Unified Affiliate Dashboard and Content Analytics Affilimate aggregates affiliate commissions from different networks into a single, unified and user-friendly dashboard.'
+    image: 'https://monicalent.com/images/affilimate.jpg'
+    build_using: 'React js, Typescript'

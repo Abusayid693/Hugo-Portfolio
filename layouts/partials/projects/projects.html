@@ -1,0 +1,27 @@
+<section class="section-projects">
+  <div class="u-left-text u-margin-bottom-medium section-projects-header">
+    <h2 class="heading-secondary">Projects</h2>
+  </div>
+
+  {{ range .data }}
+
+  <div class="project-box">
+    <div class="project-box-text-box">
+      <div class="project-box-title-box">
+
+      <h3 class="title-text">SDE Intern</h3>
+      <a class="u-link" href="{{.github}}">Github &#8680;</a>
+    </div>
+      <h3 class="project-box-title-text project-box-title-text__heading">
+        <span>About</span> : {{.title}}
+        <br />
+        Build using <span>{{.build_using}}</span>
+      </h3>
+    </div>
+    <img class="project-box-title-image" src="{{.image}}" />
+    <div class="project-box-text-box">
+      <h3 class="project-box-title-text">{{.sub_title}}</h3>
+    </div>
+  </div>
+  {{ end }}
+</section>

@@ -10,10 +10,13 @@
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
-    
+    text-align: center;
+
    &--profile{
     height: 15rem;
     border-radius: 50%;
+    margin: 0;
+    
    }
     &__logo-box { 
       position: absolute;

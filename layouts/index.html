@@ -28,8 +28,8 @@
           </ul>
            {{ end }} -->
            <!--  "data" .Site.Data.experience.AAPL is passed as props from yaml file -->
-          {{ partial "experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
-          {{ partial "projects.html" . }}
+          {{ partial "experience/experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
+          {{ partial "projects/projects.html" (dict "context" . "data" .Site.Data.projects.PROJECTS ) }}
 
           <!-- {{ partial "about.html" . }} -->
           <!-- {{ partial "features.html" . }} -->

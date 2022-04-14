@@ -15,7 +15,7 @@
     </div>
     <div class="experience-box__content">
         {{ range .data }}
-        {{ partial "single.html" (dict "context" . "myVar" .key  "company" .company "data" .data) }} 
+        {{ partial "experience/single.html" (dict "context" . "myVar" .key  "company" .company "data" .data) }} 
         {{ end }}
     </div>
   </div>

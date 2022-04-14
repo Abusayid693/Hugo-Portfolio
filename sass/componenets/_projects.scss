@@ -30,6 +30,13 @@
     }
   }
 
+  &-title-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &-title-image {
     width: 100%;
     margin-bottom: 3rem;
