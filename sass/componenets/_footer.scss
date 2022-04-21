@@ -1,0 +1,29 @@
+.footer{
+    margin-top: 50px;
+
+    &-heading{
+        color: $color-black-300;
+    }
+
+    &-socials{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & a{
+            color: $color-black-200;
+            margin: 0 10px;
+
+            &:hover{
+                color: $color-pink-2;
+            }
+
+        }
+    }
+
+    &-copy-right{
+        color: $color-black-200;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+} 

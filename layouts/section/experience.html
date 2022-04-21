@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+  <body>
+    {{ partial "navigation.html" . }}
+
+    <div class="container">
+      <main id="main">
+          {{ partial "experience/experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
+          {{ partial "footer/footer.html" . }}
+          </main>
+  </body>
+</html>
