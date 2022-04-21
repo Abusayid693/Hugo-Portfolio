@@ -1,36 +1,42 @@
-.header { 
-    height: 95vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(rgb(0, 0, 0), 0.99),
-        rgba(rgb(59, 59, 59), 0.99)
-      ),
-      url("/images/hero.jpg"); 
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    position: relative;
-    text-align: center;
+.header {
+  background-color: $color-black;
+  background-size: cover;
+  background-position: top;
 
-   &--profile{
+  position: relative;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include for-desktop {
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
+  &--profile {
     height: 15rem;
     border-radius: 50%;
     margin: 0;
-    
-   }
-    &__logo-box { 
-      position: absolute;
-      top: 4rem;
-      left: 3rem;
-    }
-    &__logo {
-      height: 3.5rem;
-    }
-    &__text-box {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
+  }
+  &__logo-box {
+    // position: absolute;
+    top: 4rem;
+    left: 3rem;
+  }
+  &__logo {
+    height: 3.5rem;
+  }
+  &__text-box {
+    text-align: center;
+
+    padding: 10rem 0;
+    width: 90%;
+
+    @include for-desktop {
+      width: 50%;
+      padding: 0;
     }
   }
+}

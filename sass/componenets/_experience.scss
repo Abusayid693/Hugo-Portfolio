@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: max-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     width: 50vw;
     gap: 10%;
@@ -11,6 +11,7 @@
     position: relative;
 
     ul {
+
         &::after{
             position:absolute;
             top: calc(var(--sidebar-position)*(100%/var(--number-of-items)));
@@ -44,6 +45,7 @@
       z-index: 10;
       opacity: 0;
 
+
       &:checked + label {
         background-color: $color-grey-light-2;
       }
@@ -66,9 +68,20 @@
       transition: 200ms;
     }
   }
+
+  @include for-desktop{
+    flex-direction: row;
+    width: 50vw;
+  }
+
 }
 
 .experience-card{
+
+  width: 90vw;
+  margin-left: -20%;
+  margin-top: 40px;
+
     &:not(&-0){
         display: none;
     }
@@ -83,5 +96,13 @@
         // color: #ffa7c4;
         font-weight: 300;
       }
+    }
+
+
+    @include for-desktop{
+      width: unset;
+      transform: unset;
+      margin-left: unset;
+      margin-top: unset; 
     }
 }

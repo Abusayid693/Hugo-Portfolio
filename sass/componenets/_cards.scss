@@ -1,35 +1,60 @@
 .card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  color: aliceblue;
-  position: relative;
-  height: 50rem;
-  
-  &__side {
-    height: 50rem;
-    transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+  @include for-desktop {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
 
-    &--front{
-        background-color: orangered;
+    &-md {
+      width: 90vw;
+
+      @include for-desktop {
+        height: 350px;
+        width: 850px;
+      }
     }
-    &--back{
+
+    &-sm {
+      width: 400px;
+    }
+
+    &__side {
+      height: 50rem;
+      transition: transform 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+
+      &-md {
+        width: 90vw;
+
+        @include for-desktop {
+          width: 850px;
+          height: 350px;
+        }
+      }
+
+      &-sm {
+        width: 400px;
+      }
+
+      &--front {
+        background-color: orangered;
+      }
+      &--back {
         background-color: green;
         transform: rotateY(180deg);
+      }
     }
-  }
 
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
+    &:hover &__side--front {
+      transform: rotateY(-180deg);
+    }
 
-  &:hover &__side--back {
-    transform: rotateY(0deg);
+    &:hover &__side--back {
+      transform: rotateY(0deg);
+    }
   }
 }

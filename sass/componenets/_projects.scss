@@ -1,6 +1,6 @@
 .project-box {
   margin: 0 auto;
-  width: 72.5vw;
+width: 90vw;
 
   &-text-box { 
     margin-left: 14%;
@@ -41,4 +41,9 @@
     width: 100%;
     margin-bottom: 3rem;
   }
+
+  @include for-desktop{
+    width: 72.5vw;
+  }
+
 }

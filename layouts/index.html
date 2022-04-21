@@ -7,17 +7,17 @@
     <div class="container">
       <main id="main">
         <header class="header">
-            <div class="header__logo-box">
+            <!-- <div class="header__logo-box">
               <img src="images/logo-white.png" alt="" class="header__logo" />
-            </div>
+            </div> -->
 
             <div class="header__text-box">
                 <img src="images/me.jpg" alt="" class="header--profile" />
               <h1 class="heading-primary">
                 <span class="heading-primary--sub">{{ index .Site.Data.head "Heading Secondary" | markdownify }}</span>
                 <span class="heading-primary--main">{{.Site.Data.head.Heading}} </span>
-                <span class="heading-primary--para">I'm building an analytics SaaS called Affilimate and a newsletter and community called Blogging for Devs. Find out more <i class="u-inline-link">on the blog →</i></span>
               </h1>
+              <h2 class="heading-primary-para mb-20">I'm building an analytics SaaS called Affilimate and a newsletter and community called Blogging for Devs. Find out more <i class="u-inline-link">on the blog →</i></h2>
               <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
           </header>
@@ -31,9 +31,10 @@
           {{ partial "experience/experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
           {{ partial "projects/projects.html" (dict "context" . "data" .Site.Data.projects.PROJECTS ) }}
 
+          {{ partial "blogs/blogs.html" . }}
           <!-- {{ partial "about.html" . }} -->
           <!-- {{ partial "features.html" . }} -->
-          {{ partial "cards.html" . }}
+          <!-- {{ partial "cards.html" . }} -->
           </main>
   </body>
 </html>

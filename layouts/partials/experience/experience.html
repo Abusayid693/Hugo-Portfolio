@@ -7,8 +7,8 @@
       <ul style="--sidebar-position: 0; --number-of-items: 3">
         {{ range .data }}
         <li>
-          <input type="radio" name="company" value={{.key}} />
-          <label for="c1">{{.company}}</label>
+          <input type="radio" name="company" value={{.key}} id={{.key}}  />
+          <label for={{.key}} >{{.company}}</label>
         </li>
         {{ end }}
       </ul>
