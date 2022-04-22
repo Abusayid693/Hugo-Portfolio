@@ -1,6 +1,6 @@
 <div class="experience-card-{{ .myVar }} experience-card">
-  <h3 class="title-text">SDE Intern <span>@{{.company}}</span></h3>
-  <h4 class="sub-title-text">October 2021 - November 2021</h4>
+  <h3 class="title-text">{{.role}} <span>@{{.company}}</span></h3>
+  <h4 class="sub-title-text"> {{.timeframe}}</h4>
   <ul class="experience-card-list">
   {{ range .data }}
   <li class="list-text">{{ . }}</li>

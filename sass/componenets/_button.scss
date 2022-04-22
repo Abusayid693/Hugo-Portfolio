@@ -16,6 +16,7 @@
   &:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    color: $color-white;
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
@@ -33,6 +34,7 @@
       background-color: $color-white;
     }
   }
+
   &::after {
     content: "";
     display: inline-block;
@@ -45,10 +47,40 @@
     z-index: -1;
     transition: all 400ms;
   }
+
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    border-radius: 10rem;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
 }
 
 .btn-text {
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $color-primary;
     display: inline-block;
     text-decoration: none;
@@ -58,14 +90,14 @@
   }
 
   &:hover {
-   background-color: $color-primary;
-   color: white;
-   box-shadow: 0 1rem 2rem rgba($color-black, .15);
-   transform: translateY(-2px);
+    background-color: $color-primary;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0);
   }
 }

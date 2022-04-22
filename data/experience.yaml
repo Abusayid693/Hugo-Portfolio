@@ -1,7 +1,7 @@
 AAPL:
   - company: 'Wknd'
     key: 0
-    role: 'SDE Intern'
+    role: 'Frontend Developer'
     timeframe: 'November 2021 - Present'
     data:
       - 'Spearheading the development of front‑end components followed by integrating GraphQL API to complete dashboards.'
@@ -10,7 +10,7 @@ AAPL:
   - company: 'Listnr'
     key: 1
     role: 'SDE Intern'
-    timeframe: 'November 2021 - Present'
+    timeframe: 'Dec 2021 - Jan 2022'
     data:
       - 'Developed new features for the Analytic dashboard components and integrated SAAS based product distribution platforms (Spotify, Google podcasts etc).'
       - 'Refactored embed player into separate modules with 20% code reduction among shared components by removing duplicate code.'
@@ -18,8 +18,8 @@ AAPL:
       - 'Actively contributed in daily stand-ups, retrospectives, and sprint planning.'
   - company: 'MLH'
     key: 2
-    role: 'SDE Intern'
-    timeframe: 'November 2021 - Present'
+    role: 'Fellow'
+    timeframe: 'Sept 2021 - Oct 2021'
     data:
       - 'Contributed to Group projects written in variety of technologies such as JavaScript with a focus on the React ecosystem, Jekyll, Python, delivered a Show and Tell lecture on Machine learning and its use cases.'
       - 'Accelerated team’s purpose for achieving a key result and collaborating with a group of engaging 14 Pod.'

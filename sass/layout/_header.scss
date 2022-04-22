@@ -10,9 +10,12 @@
   align-items: center;
   justify-content: center;
 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
   @include for-desktop {
     height: 95vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
   }
 
   &--profile {

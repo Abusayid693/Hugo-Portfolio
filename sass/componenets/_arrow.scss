@@ -1,0 +1,40 @@
+.scroll-prompt {
+  & * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  position: relative;
+  z-index: 998;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  height: 100px;
+
+  .scroll-prompt-arrow-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px;  
+    animation-name: bounce; 
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .scroll-prompt-arrow {
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .scroll-prompt-arrow:last-child {
+    animation-direction: reverse;
+    margin-top: -6px;
+  }
+  .scroll-prompt-arrow > div {
+    width: 36px;
+    height: 36px;
+    border-right: 8px solid $color-black-300;
+    border-bottom: 8px solid $color-black-300;
+    transform: rotate(45deg) translateZ(1px);
+  }
+}

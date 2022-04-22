@@ -4,7 +4,7 @@
 @import "base/utilities";
 @import "base/preset";
 
-@import "abstracts/functions";
+@import "abstracts/functions"; 
 @import "abstracts/mixins"; 
 @import "abstracts/variables";
 
@@ -17,6 +17,8 @@
 @import "componenets/projects";
 @import "componenets/blog";
 @import "componenets/footer";
+@import "componenets/arrow";
+
 
 
 @import "layout/header";
