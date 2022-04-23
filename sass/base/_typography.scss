@@ -39,7 +39,7 @@ body {
 }
 
 .heading-primary-para {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2rem;
   margin: 0;
   color: $color-white;
@@ -50,7 +50,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  // @include gradientText;
+
   color: $color-pink-2;
   letter-spacing: 2px;
   transition: all 200ms;
@@ -74,9 +74,10 @@ body {
 }
 
 .list-text {
-  font-size: 1.7rem;
+  font-size: 1.79rem;
   color: $color-text-dark;
   line-height: 1.6;
+  font-weight: 500;
 
   &:not(:last-child) {
     margin-bottom: 0.5rem;

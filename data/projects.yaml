@@ -1,19 +1,19 @@
 PROJECTS:
-  - heading: 'Voicefy'
+  - heading: 'Voicefy (in progress)'
     key: 0
     github: 'https://github.com/Abusayid693/Eather-Client'
-    title: 'A Software tool for creating short videos, instagram reels with high quality AI voice overs within your browser.'
-    sub_title: 'Unified Affiliate Dashboard and Content Analytics Affilimate aggregates affiliate commissions from different networks into a single, unified and user-friendly dashboard.'
+    title: 'A Software tool for generating high quality AI voices for your next voice over videos. It uses cloud services to generate state of the art AI voices within your browser and store them for future use.'
+    sub_title: 'Voicefy server is build on GraphQL, Rest API and Amazon RDS (PostgreSQL) using express and Node js'
     image: 'images/eather.png'
-    build_using: 'React js, Typescript'
-  - heading: 'Wknd'
+    build_using: ' React js, Typescript, Chakra UI, Amazon RDS, S3, Apollo, IBM Watson'
+  - heading: 'Type Writer'
     key: 1
-    github: 'SDE Intern'
+    github: 'https://github.com/Abusayid693/Type-writer'
     title: 'A documenting web application for programmers with the support of many modern techniques to make documenting easier and faster.'
     sub_title: 'The application also contains user authentication through login/sign-up feature. Type-writer is also well equipped with version control to keep a track record for all saved versions of a file in the cloud. Users are also given choices in 3 different formats to download their files in local environment (i.e PDF format, text format, code block format).'
     image: 'https://i.imgur.com/TtSRRF0.png'
-    build_using: 'React js, Node js, MongoDB'
-  - heading: 'react-hamburger-menus'
+    build_using: 'React js, Node js, MongoDB, Redux'
+  - heading: 'NPM Package'
     key: 2
     github: 'https://github.com/Abusayid693/react-hamburger-menus'
     title: 'A zero dependancy react library for creating animated hamburger menus with CSS transitions.'

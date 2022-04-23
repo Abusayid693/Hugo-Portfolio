@@ -1,17 +1,23 @@
 .project-box {
   margin: 0 auto;
-width: 90vw;
+  width: 90vw;
 
-  &-text-box { 
-    margin-left: 14%;
+  &-text-box {
     margin-bottom: 5rem;
-    width: 70%;
+
+    margin-left: $padding-left-mb;
+
+    @include for-desktop {
+      width: 70%;
+      margin-left: 14%;
+    }
   }
 
   &-title-text {
     color: $color-black;
     font-weight: 400;
     margin-top: 15px;
+    margin-bottom: 0px;
     span {
       color: $color-pink-2;
     }
@@ -26,15 +32,17 @@ width: 90vw;
       &::first-line {
         font-size: 2.5rem;
         font-weight: 500;
+        visibility: visible !important;
       }
     }
   }
 
-  &-title-box{
+  &-title-box {
     display: flex;
+    justify-content: space-between;
+
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
 
   &-title-image {
@@ -42,8 +50,7 @@ width: 90vw;
     margin-bottom: 3rem;
   }
 
-  @include for-desktop{
+  @include for-desktop {
     width: 72.5vw;
   }
-
 }

@@ -1,5 +1,6 @@
 .u-center-text {
   text-align: center;
+  margin: 0 auto;
 }
 
 .u-margin-bottom-big {
@@ -36,7 +37,13 @@ font-style: normal;
 }
 
 .u-left-text{
+
+  margin-left: $padding-left-mb;
+
+  @include for-desktop{
   margin-left: 24%;
+  }
+
 }
 
 .u-left-margin{
