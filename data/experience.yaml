@@ -2,7 +2,7 @@ AAPL:
   - company: 'Wknd'
     key: 0
     role: 'Frontend Developer'
-    timeframe: 'November 2021 - Present'
+    timeframe: 'Oct 2021 - Present'
     data:
       - 'Spearheading the development of front‑end components followed by integrating GraphQL API to complete dashboards.'
       - 'Optimised network requests and bundle size by 50% by using intersection observer which resulted increase in SEO score by 21% (for smaller screens).'
