@@ -4,9 +4,10 @@ AAPL:
     role: 'Frontend Developer'
     timeframe: 'Oct 2021 - Present'
     data:
-      - 'Spearheading the development of front‑end components followed by integrating GraphQL API to complete dashboards.'
-      - 'Optimised network requests and bundle size by 50% by using intersection observer which resulted increase in SEO score by 21% (for smaller screens).'
-      - 'Responsible for developing UI for WKND party app while enhancing existing component wise state management in react-native.'
+      - ' Developed web application and mobile app enhancements using JavaScript, React and React Native. '
+      - 'Created frontend Design System Library using Storybook and Typescript.'
+      - 'Optimised network request and bundle size by 50% using intersection observer which resulted increase in SEO score by 21% (for smaller screens).'
+      - 'Integrated authentication flow utilising context API, react stack navigation and async-storage.  In addition, utilising Sanity Studio, GraphQL, Redux, REST APIs to develop new features.'
   - company: 'Listnr'
     key: 1
     role: 'SDE Intern'
@@ -23,3 +24,10 @@ AAPL:
     data:
       - 'Contributed to Group projects written in variety of technologies such as JavaScript with a focus on the React ecosystem, Jekyll, Python, delivered a Show and Tell lecture on Machine learning and its use cases.'
       - 'Accelerated team’s purpose for achieving a key result and collaborating with a group of engaging 14 Pod.'
+  - company: 'Vocally'
+    key: 3
+    role: 'Intern'
+    timeframe: 'Jun 2022 - Jul 2021'
+    data:
+      - 'Utilized Express, React, and MongoDB to create MVP prototype application with user validation.'
+      - 'Contributed to various in house and out house projects.'
