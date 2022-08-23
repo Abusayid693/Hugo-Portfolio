@@ -14,11 +14,11 @@ body {
 .heading-primary {
   color: $color-white;
   backface-visibility: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 
   &--main {
-    display: block;
-    font-weight: 400;
+    display: block; 
+    font-weight: 400; 
     font-size: 3rem;
     letter-spacing: 3.5rem;
     animation: moveInLeft 800ms ease-in-out;

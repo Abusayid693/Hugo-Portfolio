@@ -14,10 +14,13 @@
                 <span class="heading-primary--sub">{{ index .Site.Data.head "Heading Secondary" | markdownify }}</span>
                 <span class="heading-primary--main">{{.Site.Data.head.Heading}}</span>
               </h1>
+              <iframe src="https://github.com/sponsors/Abusayid693/button" title="Sponsor Abusayid693" height="35" width="116" style="border: 0;"></iframe>
               <h2 class="heading-primary-para mb-20">{{.Site.Data.head.TITLE}}.<a href="mailto:abusayid693@gmail.com"><i class="u-inline-link"> get in touch →</i></a></h2>
               <a href="/resume" class="btn btn--white btn--animated">Check my resume</a>
+              
             </div> 
           </header>
+          
            <!--  "data" .Site.Data.experience.AAPL is passed as props from yaml file -->
           {{ partial "experience/experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
           {{ partial "projects/projects.html" (dict "context" . "data" .Site.Data.projects.PROJECTS ) }}
