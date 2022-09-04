@@ -10,14 +10,19 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 10px; 
   overflow-x: hidden;
 }
 
-body {
+body { 
   box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0 !important;
+}
+
+.container{
   background-color: $color-pink;
-   overflow-x: hidden;
+  margin: 1rem;
 }
 
 a{

@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
+{{ partial "head.html" . }}
 
-    <div class="container">
-      <main id="main">
-          <h1>Hello World</h1>
-          </main>
-  </body>
+<body>
+  {{ partial "navigation.html" . }}
+
+  <div class="links-container">
+    <figure class="links_container_profile">
+      <img src="/images/me.jpg" loading="lazy" alt="" class="links_container_profile_image" />
+      <figcaption class="links_container_profile_title">
+        Rehan
+      </figcaption>
+      <figsubcaption class="links_container_profile_sub_title">A Software developer specialising in building performant frontend applications</figsubcaption>
+    </figure>
+    <ul class="links_container_list">
+
+      {{ range .Site.Data.links.AAPL }}
+      <li class="links_container_list_item"> <a href="{{.link}}"
+        target="_blank" class="links_container_list_link"> <i class="links_container_list_item_icon  {{.fabIcon}}"></i>
+        {{.title}}</a></li>
+      {{end}}
+    </ul>
+    <footer class="links-container_footer">
+      © Rehan Choudhury 💙 - 2022
+    </footer>
+  </div>
+</body>
+
 </html>

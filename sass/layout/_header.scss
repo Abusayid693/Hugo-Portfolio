@@ -4,11 +4,12 @@
   background-position: top;
 
   position: relative;
-  text-align: center;
-
+  text-align: center; 
+ 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: center; 
+  padding-top: 2rem;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
@@ -22,11 +23,6 @@
     height: 15rem;
     border-radius: 50%;
     margin: 0;
-  }
-  &__logo-box {
-    // position: absolute;
-    top: 4rem;
-    left: 3rem;
   }
   &__logo {
     height: 3.5rem;

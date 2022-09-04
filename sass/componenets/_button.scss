@@ -10,7 +10,8 @@
     font-size: $default-font-size;
   }
   &--animated {
-    animation: moveInBottom 400ms ease-out 0.75s;
+    animation: moveInBottom 400ms ease-out 0.75s, shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
     animation-fill-mode: backwards;
   }
   &:hover {
