@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    {{ partial "head.html" . }}
-  <body>
-    {{ partial "navigation.html" . }}
+{{ partial "head.html" . }}
 
-    <div class="container">
-      <main id="main">
-        <header class="header">
+<body>
+  {{ partial "navigation.html" . }}
 
-            <div class="header__text-box">
-                <img src="images/me.jpg" loading="lazy" alt="" class="header--profile" />
-              <h1 class="heading-primary">
-                <span class="heading-primary--sub">{{ index .Site.Data.head "Heading Secondary" | markdownify }}</span>
-                <span class="heading-primary--main">{{.Site.Data.head.Heading}}</span>
-              </h1>
-              <iframe src="https://github.com/sponsors/Abusayid693/button" title="Sponsor Abusayid693" height="35" width="116" style="border: 0;"></iframe>
-              <h2 class="heading-primary-para mb-20">{{.Site.Data.head.TITLE}}.<a href="mailto:abusayid693@gmail.com"><i class="u-inline-link"> get in touch →</i></a></h2>
-              <a href="/resume" class="btn btn--white btn--animated">Check my resume</a>
-              
-            </div> 
-          </header>
-          
-           <!--  "data" .Site.Data.experience.AAPL is passed as props from yaml file -->
-          {{ partial "experience/experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
-          {{ partial "projects/projects.html" (dict "context" . "data" .Site.Data.projects.PROJECTS ) }}
+  <div class="container">
+    <main id="main">
+      <header class="header">
 
-          {{ partial "blogs/blogs.html" . }}
-          {{ partial "footer/footer.html" . }}
-          </main>
-  </body>
+        <div class="header__text-box">
+          <img src="images/me.jpg" loading="lazy" alt="" class="header--profile" />
+          <h1 class="heading-primary">
+            <span class="heading-primary--sub">{{ index .Site.Data.head "Heading Secondary" | markdownify }}</span>
+            <span class="heading-primary--main">{{.Site.Data.head.Heading}}</span>
+          </h1>
+          <iframe src="https://github.com/sponsors/Abusayid693/button" title="Sponsor Abusayid693" height="35"
+            width="116" style="border: 0;"></iframe>
+          <h2 class="heading-primary-para mb-20">{{.Site.Data.head.TITLE}}.<a href="mailto:abusayid693@gmail.com"><i
+                class="u-inline-link"> get in touch →</i></a></h2>
+          <a href="/resume" class="btn btn--white btn--animated">Check my resume</a>
+          <div class="triangle-wrapper">
+            <img class="triangle-1" src="images/triangle.svg" />
+            <img class="triangle-2" src="images/triangle-2.svg" />
+
+          </div>
+        </div>
+      </header>
+
+      <!--  "data" .Site.Data.experience.AAPL is passed as props from yaml file -->
+      {{ partial "experience/experience.html" (dict "context" . "data" .Site.Data.experience.AAPL ) }}
+      {{ partial "projects/projects.html" (dict "context" . "data" .Site.Data.projects.PROJECTS ) }}
+
+      {{ partial "blogs/blogs.html" . }}
+      {{ partial "footer/footer.html" . }}
+    </main>
+</body>
+
 </html>
+
+<script>
+  const lerp = (a, b, n) => (1 - n) * a + n * b;
+  const triangleController = {
+    current: 0,
+    target: 0,
+    inertia: 0.1,
+  };
+  const triangle1 = document.querySelector(".triangle-1")
+  const triangle2 = document.querySelector(".triangle-2")
+
+
+  window.addEventListener('wheel', (e) => {
+    triangleController.current = e.pageY / 40;
+    triangleController.target = lerp(triangleController.target, triangleController.current, triangleController.inertia)
+    triangle1.style.transform = `rotate(${triangleController.target}deg)`
+    triangle2.style.transform = `rotate(-${triangleController.target}deg)`
+  }, { passive: true });
+</script>
